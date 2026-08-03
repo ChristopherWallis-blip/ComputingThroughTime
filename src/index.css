@@ -65,24 +65,64 @@ nav button:hover {
   color: transparent;
 }
 
-.history-timeline {
-  padding: 3rem;
+.timeline-layout {
+  padding: 0.5rem;
+  display: flex;
+  gap: 1rem;
+
+  height: calc(100vh - 250px);
+  overflow: hidden;
 }
 
 .timeline-container {
   position: relative;
-  border-left: 4px solid #60a5fa;
-  padding-left: 2rem;
+  display: flex;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  flex-direction: column;
+  flex: 2;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .timeline-event {
-  margin-bottom: 3rem;
-  cursor: pointer;
   padding: 1rem;
+  border: 3px solid #2563eb;
+  box-sizing: border-box;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+
+  cursor: pointer;
   border-radius: 12px;
   transition: 0.2s;
 }
 
 .timeline-event:hover {
-  background: #e0f2fe;
+  transform: scale(1.02);
+  background: #dbeafe;
+  color: black;
+}
+
+.timeline-event.active {
+  background: #dbeafe;
+  color: black;
+}
+
+.timeline-details {
+  flex: 3;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.5rem;
+  color: black;
+
+  margin: 1rem 1rem 1rem 0;
+  padding: 2rem;
+
+  border: 3px solid blue;
+  border-radius: 16px;
+  background: #dbeafe;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
