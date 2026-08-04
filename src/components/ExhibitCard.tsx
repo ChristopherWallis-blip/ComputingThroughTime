@@ -8,12 +8,16 @@ interface Props {
 export default function ExhibitCard({ title, year, description, demo, }: Props) {
 	return (
 		<article className="exhibit-card">
-			<header>
-				<h2> {title} </h2>
-				<h2> {year} </h2>
-			</header>
+			<div className="exhibit-card-header">
+				<div className="exhibit-card-header-head">
+					<h1> {title} </h1>
+					<h4> {year} </h4>
+				</div>
+				<div className="exhibit-card-header-body">
+					<p> {description} </p>
+				</div>
+			</div>
 
-			<p> {description} </p>
 			<section className="exhibit-demo"> {demo} </section>
 		</article>
 	);
