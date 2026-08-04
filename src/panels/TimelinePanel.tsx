@@ -3,7 +3,7 @@ import { useState } from "react";
 const events = [
 	{
 		id: 0,
-		year: "≈3000 BCE",
+		year: "≈ 30,000-40,000 BCE",
 		title: "Early Counting Systems",
 		description: `
 			Early humans used marks carved into bone, stone, and wood to record
@@ -18,7 +18,7 @@ const events = [
 	},
 	{
 		id: 1,
-		year: "≈300 BCE",
+		year: "≈ 2300-2700 BCE",
 		title: "The Abacus",
 		description: `
 			The abacus was one of the earliest calculation devices. By moving beads

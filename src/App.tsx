@@ -13,7 +13,7 @@ function App() {
 	const [activePanel, setActivePanel] = useState("home");
 
 	return (
-		<>
+		<div className="app">
 			<Hero />
 			<Navbar 
 				activePanel={activePanel}
@@ -26,7 +26,7 @@ function App() {
 				{activePanel === "exhibits" && <ExhibitsPanel />}
 				{activePanel === "about" && <AboutPanel />}
 			</main>
-		</>
+		</div>
 	);
 }
 
