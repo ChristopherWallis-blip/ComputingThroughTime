@@ -36,7 +36,7 @@ export const exhibits: Exhibit[] = [
 	{
 		id: "roman",
 		title: "Roman Numerals",
-		year: "≈ 800-900 BC",
+		year: "≈ 800-900 CE",
 		description: `
 			Roman numerals
 		`,
