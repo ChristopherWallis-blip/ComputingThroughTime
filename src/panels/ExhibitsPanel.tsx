@@ -5,22 +5,31 @@ import ExhibitBar from "../components/ExhibitBar";
 import ExhibitCard from "../components/ExhibitCard";
 
 export default function ExhibitsPanel() {
-	const [selected, setSelected] = useState("tally");
-	const exhibit = exhibits.find((e) => e.id === selected)!;
+	const [selectedExhibit, setSelectedExhibit] = useState(() => {
+		const saved = localStorage.getItem("selectedExhibit");
+		return saved ? Number(saved) : 0;
+	});
+	
+	function selectExhibit(index: number) {
+		localStorage.setItem("selectedExhibit", index.toString());
+		setSelectedExhibit(index);
+	}
+	
+	const currentExhibit = exhibits[selectedExhibit];
 
 	return (
 		<div className="exhibit-layout">
 			<ExhibitBar
 				exhibits={exhibits}
-				selected={selected}
-				onSelect={setSelected}
+				selected={selectedExhibit}
+				onSelect={selectExhibit}
 			/>
 
 			<ExhibitCard 
-				title={exhibit.title}
-				year={exhibit.year}
-				description={exhibit.description}
-				demo={exhibit.demo}
+				title={currentExhibit.title}
+				year={currentExhibit.year}
+				description={currentExhibit.description}
+				demo={currentExhibit.demo}
 			/>
 		</div>
 	);

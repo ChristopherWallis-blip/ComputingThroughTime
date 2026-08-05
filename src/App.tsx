@@ -9,19 +9,28 @@ import AboutPanel from "./panels/AboutPanel";
 import { useState } from "react";
 
 
-function App() {
-	const [activePanel, setActivePanel] = useState("home");
+
+
+export default function App() {
+	const [activePanel, setActivePanel] = useState(() => {
+			return localStorage.getItem("activePanel") || "home";
+	});
+
+	function changePanel(panel: string) {
+		localStorage.setItem("activePanel", panel);
+		setActivePanel(panel);
+	}
 
 	return (
 		<div className="app">
 			<Hero />
 			<Navbar 
 				activePanel={activePanel}
-				setActivePanel={setActivePanel}
+				setActivePanel={changePanel}
 			/>
 
 			<main>
-				{activePanel === "home" && (<HomePanel setActivePanel={setActivePanel} />)}
+				{activePanel === "home" && (<HomePanel setActivePanel={changePanel} />)}
 				{activePanel === "timeline" && <TimelinePanel />}
 				{activePanel === "exhibits" && <ExhibitsPanel />}
 				{activePanel === "about" && <AboutPanel />}
@@ -29,5 +38,3 @@ function App() {
 		</div>
 	);
 }
-
-export default App;
