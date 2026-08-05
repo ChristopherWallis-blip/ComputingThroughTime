@@ -21,7 +21,7 @@ function App() {
 			/>
 
 			<main>
-				{activePanel === "home" && <HomePanel />}
+				{activePanel === "home" && (<HomePanel setActivePanel={setActivePanel} />)}
 				{activePanel === "timeline" && <TimelinePanel />}
 				{activePanel === "exhibits" && <ExhibitsPanel />}
 				{activePanel === "about" && <AboutPanel />}
