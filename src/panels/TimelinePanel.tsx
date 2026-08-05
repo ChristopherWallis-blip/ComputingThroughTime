@@ -97,6 +97,8 @@ function TimelinePanel() {
 	return (
 		<section className="timeline-layout">
 			<div className="timeline-container">
+				<h1 className="timeline-container-header"> Timeline Events </h1>	
+
 				{events.map((event) => (
 					<div 
 						key={event.id} 
@@ -105,8 +107,8 @@ function TimelinePanel() {
 						}`}
 						onClick={() => setSelectedEvent(event)}
 					>
-						<h1> {event.title} </h1>
-						<h2> {event.year} </h2>
+						<h2> {event.title} </h2>
+						<h3> {event.year} </h3>
 					</div>
 				))}
 			</div>

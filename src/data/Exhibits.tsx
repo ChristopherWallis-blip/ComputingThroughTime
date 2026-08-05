@@ -38,16 +38,22 @@ export const exhibits: Exhibit[] = [
 		title: "Roman Numerals",
 		year: "≈ 800-900 CE",
 		description: `
-			Roman numerals
+			Roman numerals were a numerical system used throughout the Roman Empire 
+			and are still found today in clocks, book chapters, and historical records. 
+			Unlike modern numbers, Roman numerals represent values through combinations 
+			of symbols with rules for addition and subtraction.
 		`,
 		demo: <RomanNumeralConverter />,
 	},
 	{
 		id: "binary",
-		title: "Binary Number System",
+		title: "Binary Systems",
 		year: "1679 CE",
 		description: `
-			Binary Number system.
+			Binary is the language at the core of digital technology. While humans 
+			typically count using ten digits, computers use a two-symbol system of 
+			0s and 1s to store, process, and communicate information. This simple 
+			system powers everything from calculators to modern computers.
 		`,
 		demo: <BinaryConverter />,
 	},
