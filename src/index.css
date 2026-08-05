@@ -228,6 +228,8 @@ nav button:hover {
 .exhibit-card-header-head h4 {
   padding-left: 20px;
   margin-top: -10px;
+
+  min-width: 320px;
 }
 
 .exhibit-card-header-body {
@@ -268,11 +270,25 @@ nav button:hover {
   flex: 1;
 
   padding: 5px;
-  margin-bottom: -2px;
+  margin-bottom: 10px;
 
-  border: 3px solid black;
-  border-radius: 15px;
-  background-color: #c7dff5;
+  background: rgba(255, 255, 255, 0.15);
+
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.25),
+    inset 0 1px 5px rgba(255, 255, 255, 0.4);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .exhibit-tallies-modify h2 {
@@ -347,4 +363,220 @@ nav button:hover {
 .tally-single {
   position: relative;
   height: 35px;
+}
+
+.exhibit-abacus {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -20px;
+  margin-left: 80px;
+  margin-right: 80px;
+
+  background: #dbeafe;
+
+  border: 10px solid black;
+  border-radius: 15px;
+}
+
+.exhibit-abacus-layout h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.exhibit-abacus-body {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: -100px;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+.exhibit-abacus-body button {
+  align-self: center;
+  width: 80%;
+  height: 50px;
+  margin-top: 20px;
+
+  color: black;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.25),
+    inset 0 1px 5px rgba(255, 255, 255, 0.4);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.exhibit-abacus-body button:hover {
+  background: rgba(255, 255, 255, 0.3);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.3),
+    inset 0 2px 8px rgba(255, 255, 255, 0.6);
+}
+
+.abacus-rod {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 10px;
+
+  width: 50px;
+  cursor: pointer;
+}
+
+.abacus-rod h2 {
+  margin-top: -60px;
+  border: 3px solid black;
+  min-width: 120px;
+  text-align: center;
+  position: absolute;
+
+  color: white;
+
+  background: linear-gradient(135deg, #60a5fa, #2563eb);
+
+  border: 3px solid #1e40af;
+
+  border-radius: 10px;
+}
+
+.abacus-rod-visible {
+  position: absolute;
+  align-self: center;
+  padding-bottom: -100px;
+
+  width: 8px;
+  height: 100%;
+  background: #5c2f0c;
+
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+}
+
+.abacus-bead {
+  position: relative;
+  z-index: 1;
+
+  width: 100px;
+  height: 40px;
+
+  border-radius: 100%;
+  margin: 3px;
+
+  background: radial-gradient(
+    circle at 35% 30%,
+    #ffffff,
+    #d9e1e8 35%,
+    #9ca3af 75%,
+    #64748b
+  );
+
+  border: 2px solid #64748b;
+
+  box-shadow:
+    inset 3px 3px 5px rgba(255, 255, 255, 0.8),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.25),
+    0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.abacus-bead:hover {
+  transform: scale(1.04);
+}
+
+.abacus-bead.active {
+  transform: translateY(-65px);
+
+  background: radial-gradient(
+    circle at 30% 25%,
+    #dbeafe,
+    #60a5fa 45%,
+    #2563eb 80%
+  );
+  border: 2px solid #1d4ed8;
+  box-shadow:
+    inset 2px 3px 5px rgba(255, 255, 255, 0.6),
+    0 3px 8px rgba(37, 99, 235, 0.4);
+}
+
+.abacus-bead.active:hover {
+  transform: scale(1.04) translateY(-65px);
+}
+
+.abacus-bead.top {
+  position: relative;
+  z-index: 1;
+
+  width: 100px;
+  height: 40px;
+
+  border-radius: 100%;
+  margin-top: 15px;
+  margin-bottom: 45px;
+
+  background: radial-gradient(
+    circle at 35% 30%,
+    #ffffff,
+    #d9e1e8 35%,
+    #9ca3af 75%,
+    #64748b
+  );
+  border: 2px solid #64748b;
+  box-shadow:
+    inset 3px 3px 5px rgba(255, 255, 255, 0.8),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.25),
+    0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.abacus-bead-top:hover {
+  transform: scale(1.04);
+}
+
+.abacus-bead.top.active {
+  transform: translateY(45px);
+
+  background: radial-gradient(
+    circle at 30% 25%,
+    #dbeafe,
+    #60a5fa 45%,
+    #2563eb 80%
+  );
+  border: 2px solid #1d4ed8;
+  box-shadow:
+    inset 2px 3px 5px rgba(255, 255, 255, 0.6),
+    0 3px 8px rgba(37, 99, 235, 0.4);
+}
+
+.abacus-bead.top.active:hover {
+  transform: scale(1.04) translateY(45px);
+}
+
+.abacus-divider {
+  width: 299px;
+  height: 15px;
+  align-self: center;
+
+  background: #5c2f0c;
+  margin-top: 10px;
+  margin-bottom: 75px;
 }
