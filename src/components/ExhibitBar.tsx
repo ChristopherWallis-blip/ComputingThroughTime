@@ -1,8 +1,6 @@
-import type { Exhibit } from "../data/Exhibits";
-
 interface Props {
-	exhibits: { id: number; title: string; }[];
-	selected: string;
+	exhibits: { id: string; title: string; }[];
+	selected: number;
 	onSelect: (index: number) => void;
 }
 
