@@ -79,7 +79,7 @@ nav button:hover {
 
 .hero h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 900;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 1);
 }
@@ -446,6 +446,7 @@ nav button:hover {
   gap: 12px;
 
   min-width: 25%;
+  max-width: 25%;
   height: 100%;
   padding: 20px;
 
@@ -531,8 +532,7 @@ nav button:hover {
   display: flex;
   flex-direction: column;
   flex: 1;
-  max-width: 70%;
-  max-height: 88%;
+  max-width: 75%;
   padding: 50px;
 
   color: black;
@@ -619,7 +619,7 @@ nav button:hover {
   display: flex;
   flex-direction: row;
   flex: 1;
-
+  max-width: 100%;
   padding: 5px;
   margin-bottom: 10px;
 
@@ -642,14 +642,14 @@ nav button:hover {
 
 .exhibit-tallies-modify h2 {
   min-width: 305px;
-  padding-left: 30px;
+  padding-left: 2%;
 
   font-weight: 800;
   text-transform: uppercase;
 }
 
 .exhibit-tallies-modify button {
-  min-width: 160px;
+  min-width: 12%;
   margin: 5px;
 
   font-size: 1.5rem;
@@ -730,9 +730,6 @@ nav button:hover {
 .exhibit-abacus {
   display: flex;
   justify-content: space-evenly;
-  margin-top: -20px;
-  margin-left: 80px;
-  margin-right: 80px;
 
   background: #dbeafe;
 
@@ -749,16 +746,21 @@ nav button:hover {
   display: flex;
   flex-direction: column;
 
-  margin-right: -100px;
-  margin-left: 300px;
-  margin-top: 50px;
+  width: 700px;
+  max-width: 50%;
+  height: 100px;
+  max-height: 20%;
+
+  margin-top: 7%;
+  margin-left: 45%;
 }
 
 .exhibit-abacus-body button {
   align-self: center;
   width: 80%;
-  height: 50px;
-  margin-top: 20px;
+  height: 80px;
+  max-height: 50%;
+  margin-top: 2%;
 
   font-size: 1.5rem;
   font-weight: 800;
@@ -806,7 +808,7 @@ nav button:hover {
 
 .abacus-rod h2 {
   margin-top: -60px;
-  min-width: 120px;
+  width: 120px;
   position: absolute;
 
   text-align: center;
@@ -824,6 +826,7 @@ nav button:hover {
   padding-bottom: -100px;
   width: 8px;
   height: 100%;
+  max-height: 100%;
 
   background: #5c2f0c;
 
@@ -835,7 +838,9 @@ nav button:hover {
   position: relative;
   z-index: 1;
   width: 100px;
+  max-width: 150%;
   height: 40px;
+  max-height: 7.5%;
   margin: 3px;
 
   border: 2px solid #64748b;
@@ -860,7 +865,7 @@ nav button:hover {
 }
 
 .abacus-bead.active {
-  transform: translateY(-65px);
+  transform: translateY(-200%);
 
   background: radial-gradient(
     circle at 30% 25%,
@@ -877,14 +882,16 @@ nav button:hover {
 }
 
 .abacus-bead.active:hover {
-  transform: scale(1.04) translateY(-65px);
+  transform: scale(1.04) translateY(-200%);
 }
 
 .abacus-bead.top {
   position: relative;
   z-index: 1;
   width: 100px;
+  max-width: 150%;
   height: 40px;
+  max-height: 7.5%;
   margin-top: 15px;
   margin-bottom: 45px;
 
@@ -910,7 +917,7 @@ nav button:hover {
 }
 
 .abacus-bead.top.active {
-  transform: translateY(45px);
+  transform: translateY(130%);
 
   border: 2px solid #1d4ed8;
 
@@ -927,14 +934,16 @@ nav button:hover {
 }
 
 .abacus-bead.top.active:hover {
-  transform: scale(1.04) translateY(45px);
+  transform: scale(1.04) translateY(130%);
 }
 
 .abacus-divider {
   width: 335px;
-  height: 15px;
+  max-width: 445%;
+  height: 3%;
+  max-height: 3%;
   align-self: center;
-  margin-top: 10px;
+  margin-top: 20%;
 
   margin-bottom: 75px;
   background: #5c2f0c;
