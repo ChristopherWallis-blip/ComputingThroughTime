@@ -21,6 +21,14 @@ The goal of the project is to connect mathematical concepts with the development
 
 **Module**: Final Project | Communication Section
 
+# Table of Contents
+
+- [Features](#features)
+  - [Interactive Timeline](#interactive-timeline)
+  - [Interactive Exhibits](#interactive-exhibits)
+- [Technologies Used](#technologies-used)
+- [Running the Project Locally](#running-the-project-locally)
+
 # Features
 
 ### Interactive Timeline
