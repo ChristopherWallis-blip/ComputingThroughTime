@@ -66,6 +66,7 @@ nav button:hover {
 ================== */
 
 .hero {
+  max-height: 15%;
   padding: 0.5rem;
 
   text-align: center;
@@ -111,7 +112,8 @@ nav button:hover {
 
 .home-card {
   position: relative;
-  width: 1200px;
+  max-width: 75%;
+  max-height: 70%;
   padding: 60px;
   overflow: hidden;
 
@@ -530,6 +532,7 @@ nav button:hover {
   flex-direction: column;
   flex: 1;
   max-width: 70%;
+  max-height: 88%;
   padding: 50px;
 
   color: black;
