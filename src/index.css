@@ -809,6 +809,7 @@ nav button:hover {
 .abacus-rod h2 {
   margin-top: -60px;
   width: 120px;
+  max-width: 180%;
   position: absolute;
 
   text-align: center;
