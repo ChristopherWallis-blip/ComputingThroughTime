@@ -11,6 +11,16 @@ This project explores the progression from early manual counting methods to mode
 
 The goal of the project is to connect mathematical concepts with the development of computing technologies and provide an engaging way to understand their historical significance.
 
+# Author
+
+**Name**: Christopher Wallis
+
+**University**: Appalachian State University
+
+**Course**: MAT 5125 - History of Mathematics
+
+**Module**: Final Project | Communication Section
+
 # Features
 
 ### Interactive Timeline
