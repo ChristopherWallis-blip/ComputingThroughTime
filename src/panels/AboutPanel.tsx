@@ -28,9 +28,6 @@ export default function AboutPanel() {
 						<strong> Pronouns: </strong> They/Them 
 					</p>
 					<p className="about-section-info">
-						<strong> Student ID: </strong> 900980019 
-					</p>
-					<p className="about-section-info">
 						<strong> Email: </strong> wallisct@appstate.edu 
 					</p>
 				</div>
